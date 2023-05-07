@@ -18,6 +18,6 @@ insert into salesman values(5001,"Nani",'Hyderabad',0.15),
 (5002,'Teja','Kolkata',0.13),(5003,'Chinna','pune',0.11),
 (5004,'Nandu','Mumbai',0.14),(5005,'Anshika','Delhi',0.13),
 (5006,'Narayana','Chennai',0.12);
-select cust_name,customer.city as cust_city,grade,salesman.salesman_id,salesman.city as salesman_city from customer
+select cust_name,customer.city as cust_city,grade,salesman.name as salesman_name,salesman.city as salesman_city from customer
 left join salesman on customer.salesman_id=salesman.salesman_id where grade<100 order by cust_id asc;
 
