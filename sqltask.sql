@@ -15,8 +15,8 @@ select * from contacts;
 select * from contacts where Active_flag=1;
 
 -- 2.Deactivate contacts who are opted out
--- delete from contacts where opt_out=1;
-update contacts set Active_flag=0 where opt_out=1;
+-delete from contacts where opt_out=1;
+-- update contacts set Active_flag=0 where opt_out=1;
 -- 3.Delete all contacts who have company name as 'ABC'
 delete from contacts where company='ABC';
 -- 4.Insert a new row
